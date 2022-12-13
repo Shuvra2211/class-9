@@ -1,0 +1,182 @@
+/* common css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+img{
+    display: inline-block;
+    /* padding: 25px; */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+/* common css end */
+
+/* nav section css start */
+nav{
+    background-color: #02918c;
+    text-align: justify;
+}
+
+nav div.row{
+    align-items: center;
+}
+
+nav .logo{
+    width: 15%;
+}
+
+nav div.menu{
+    width: 75%;
+}
+
+nav div .menu ul{
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    padding: 26px 25px;
+    display: inline-block;
+    transition: 0.8s;
+}
+nav .menu ul li a:hover,
+nav .menu ul li a.active{
+    background: yellow;
+    color: black;
+}
+/* nav section css end */
+
+/* bannar section css start */
+
+#banner{
+    background-image: url(../img/bannar_bg.jpg);
+    background-size: cover;
+    height: 728px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::before{
+    content: '';
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#banner .container{
+    margin: auto;
+}
+
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+#banner p{
+    font-size: 18px;
+    color: white;
+}
+
+#banner a{
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    letter-spacing: 2px;
+    background-color: #cfc91d;
+    padding: 19px 42px;
+    text-transform: uppercase;
+}
+
+/* banner section css end */
+
+/* about section css start */
+#about{
+    text-align: center;
+}
+
+#about .info h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 98px;
+}
+
+#about .info p{
+    color: #7e8287;
+    font-size: 16px;
+    padding-top: 32px;
+    width: 900px;
+    margin: auto;
+}
+
+#about .info p b{
+   font-size: 23px;
+    font-weight: 800;
+}
+#about .about_child{
+    width: 25%;
+    border-right: 2px solid #7e8287;
+    padding: 50px 60px; 
+     margin: 80px 0;
+}
+
+#about .about_child:last-child{
+    border: none;
+}
+
+
+#about .about_child .tittle{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 28px 0;
+}
+
+#about .about_child .p1{
+    font-size: 11px;
+    color: #7e8287;
+
+}
+/* about section css end */
